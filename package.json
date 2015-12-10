@@ -1,6 +1,6 @@
 {
   "name": "get-sync.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple synchronous get method.",
   "main": "get-sync.js",
   "directories": {
