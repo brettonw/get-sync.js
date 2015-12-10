@@ -1,0 +1,26 @@
+{
+  "name": "get-sync",
+  "version": "1.0.0",
+  "description": "A simple synchronous get method.",
+  "main": "get-synch.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brettonw/get-sync.js.git"
+  },
+  "keywords": [
+    "sync",
+    "get"
+  ],
+  "author": "Bretton Wade <bretton.wade@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brettonw/get-sync.js/issues"
+  },
+  "homepage": "https://github.com/brettonw/get-sync.js#readme"
+}
