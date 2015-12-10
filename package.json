@@ -1,8 +1,13 @@
 {
   "name": "get-sync.js",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "A simple synchronous get command.",
   "main": "get-sync.js",
+=======
+  "description": "A simple synchronous get method.",
+  "main": "get-synch.js",
+>>>>>>> a64b7f7ea9dd639ceb17f47b0b9e1d824a5cead7
   "directories": {
     "test": "test"
   },
@@ -18,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/brettonw/get-sync.js/issues"
   },
-  "homepage": "https://github.com/brettonw/get-sync.js#readme"
+  "homepage": "https://github.com/brettonw/get-sync.js#readme",
+  "dependencies": {  }
 }

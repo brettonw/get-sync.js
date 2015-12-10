@@ -3,10 +3,11 @@
 // implementation details
 
 var _cp = require ("child_process");
+var _url = require ("url");
 
 var getSync = function (options, path) {
     var options = { stdio: ["ignore", process.stderr, "ignore"] };
-    _cp.spawnSync("node", ["./fetch.js", url, path], options);
+    _cp.spawnSync("node", ["./fetch.js", _url.format(options), path], options);
 };
 
 module.exports = getSync;
