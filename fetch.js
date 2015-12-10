@@ -11,7 +11,7 @@ var request = _http.request(process.argv[2], function(response) {
     var received = 0;
     var total = response.headers["content-length"];
     
-    process.stderr.write ("Open to receive " + total + " bytes\n");
+    process.stderr.write ("(OPEN) " + process.argv[2] + " (" + total + " bytes)\n");
     
     //response.setEncoding("binary");
     response.on("data", function (chunk) { 
@@ -23,12 +23,12 @@ var request = _http.request(process.argv[2], function(response) {
     
     response.on("end", function() { 
         _fs.writeFileSync(process.argv[3], Buffer.concat(chunks)); 
-        process.stderr.write ("Saved to " + process.argv[3] + "\n");
+        process.stderr.write ("(SAVE) " + process.argv[3] + "\n");
     });
 });
 
 request.on("error", function(error) {
-    process.stderr.write ("ERROR ON DOWNLOAD: " + error);
+    process.stderr.write ("(ERROR) " + error);
 });
 
 request.end ();

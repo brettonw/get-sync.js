@@ -4,12 +4,10 @@
 
 var _cp = require ("child_process");
 var _path = require ("path");
-var _url = require ("url");
-var _util = require ("util");
 
 var getSync = function (url, path) {
     var options = { stdio: ["ignore", "ignore", 2] };
-    process.stderr.write ("get url (" + url + ") to " + path + "\n");
+    //process.stderr.write ("get url (" + url + ") to " + path + "\n");
     var fetch = _path.join(__dirname, "fetch.js");
     _cp.spawnSync("node", [fetch, url, path], options);
 };
