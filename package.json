@@ -2,7 +2,7 @@
   "name": "get-sync",
   "version": "1.0.0",
   "description": "A simple synchronous get method.",
-  "main": "./get-synch.js",
+  "main": "get-synch.js",
   "directories": {
     "test": "test"
   },
@@ -22,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/brettonw/get-sync.js/issues"
   },
-  "homepage": "https://github.com/brettonw/get-sync.js#readme"
+  "homepage": "https://github.com/brettonw/get-sync.js#readme",
+  "dependencies": {  }
 }
