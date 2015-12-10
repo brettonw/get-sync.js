@@ -1,5 +1,5 @@
 {
-  "name": "get-sync.js",
+  "name": "get-sync",
   "version": "1.0.1",
   "description": "A simple synchronous get method.",
   "main": "get-sync.js",
