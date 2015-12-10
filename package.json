@@ -2,12 +2,12 @@
   "name": "get-sync",
   "version": "1.0.0",
   "description": "A simple synchronous get method.",
-  "main": "get-synch.js",
+  "main": "./get-synch.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "test/main.js"
+    "test": "node test/main.js"
   },
   "repository": {
     "type": "git",
