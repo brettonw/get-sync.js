@@ -6,10 +6,10 @@ var _cp = require ("child_process");
 var _path = require ("path");
 
 var getSync = function (url, path) {
-    var options = { stdio: ["ignore", "ignore", 2] };
+    var options = { stdio: ["ignore", 1, 2] };
     //process.stderr.write ("get url (" + url + ") to " + path + "\n");
-    var fetch = _path.join(__dirname, "fetch.js");
-    _cp.spawnSync("node", [fetch, url, path], options);
+    var httpRequestJs = _path.join(__dirname, "http-request.js");
+    _cp.execSync("node " + httpRequestJs + " " + url + " " + path, options);
 };
 
 module.exports = getSync;

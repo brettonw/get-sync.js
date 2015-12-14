@@ -6,7 +6,7 @@
 var _fs = require ("fs");
 var _http = require ("http");
 
-var request = _http.request(process.argv[2], function(response) {
+var myRequest = _http.request(process.argv[2], function(response) {
     var chunks = [];
     var received = 0;
     var total = response.headers["content-length"];
@@ -27,8 +27,8 @@ var request = _http.request(process.argv[2], function(response) {
     });
 });
 
-request.on("error", function(error) {
+myRequest.on("error", function(error) {
     process.stderr.write ("(ERROR) " + error);
 });
 
-request.end ();
+myRequest.end ();
