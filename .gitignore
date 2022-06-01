@@ -28,3 +28,6 @@ node_modules
 
 # test downloads
 test/abc.js
+
+.idea
+.DS_Store
