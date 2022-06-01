@@ -3,13 +3,13 @@
 // process.argv[2] = url
 // process.argv[3] = destination
 
-var _fs = require ("fs");
-var _http = require ("http");
+let _fs = require ("fs");
+let _http = require ("http");
 
-var myRequest = _http.request(process.argv[2], function(response) {
-    var chunks = [];
-    var received = 0;
-    var total = response.headers["content-length"];
+let myRequest = _http.request(process.argv[2], function(response) {
+    let chunks = [];
+    let received = 0;
+    let total = response.headers["content-length"];
     
     process.stderr.write ("(OPEN) " + process.argv[2] + " (" + total + " bytes)\n");
     
